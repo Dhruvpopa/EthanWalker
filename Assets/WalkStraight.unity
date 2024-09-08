@@ -217,8 +217,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330727200}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.16751574, y: 0.0020675762, z: -0.0003508525, w: -0.9858672}
-  m_LocalPosition: {x: 0.50883806, y: 1.8710804, z: -68.07789}
+  m_LocalRotation: {x: -0.002850071, y: -0.96967906, z: 0.24410135, w: -0.011356449}
+  m_LocalPosition: {x: 0.7574841, y: 6.555947, z: 79.508194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -418,8 +418,8 @@ Transform:
   m_GameObject: {fileID: 1064431641}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 13.762492}
+  m_LocalPosition: {x: 0, y: -0.0000001937151, z: 63.550003}
+  m_LocalScale: {x: 1, y: 1, z: 1.687778}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -433,6 +433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1602527263}
+  - component: {fileID: 1602527264}
   m_Layer: 0
   m_Name: Population Manager
   m_TagString: Untagged
@@ -449,12 +450,27 @@ Transform:
   m_GameObject: {fileID: 1602527262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4987285, y: -15.456952, z: -9.183116}
+  m_LocalPosition: {x: 0, y: 0, z: 65.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1602527264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602527262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b070eed6f24d6c24896b5b377b74305e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botPrefab: {fileID: 1565522241125702, guid: 7d36b5f5cbe294f368cce70409a75a03, type: 3}
+  populationSize: 50
+  trialTime: 5
 --- !u!850595691 &1660160738
 LightingSettings:
   m_ObjectHideFlags: 0

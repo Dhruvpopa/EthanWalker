@@ -9,6 +9,8 @@ public class Brain : MonoBehaviour
 {
     public int DNALength = 1;
     public float timeAlive;
+    public float distanceTravelled;
+    Vector3 startPosition;
     public DNA dna;
 
     private ThirdPersonCharacter m_Character;
@@ -58,8 +60,11 @@ public class Brain : MonoBehaviour
         m_Move = v * Vector3.forward + h * Vector3.right;
         m_Character.Move(m_Move,crouch,m_Jump);
         m_Jump = false;
-        if (alive) timeAlive += Time.deltaTime;
-
+        if (alive)
+        {
+            timeAlive += Time.deltaTime;
+            distanceTravelled = Vector3.Distance(this.transform.position, startPosition);
+        }
     }
 }
 
